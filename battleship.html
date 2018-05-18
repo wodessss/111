@@ -1,50 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="battleship.css">
   <title>Battleship</title>
-  <style>
-    body{
-      background-color: black;
-    }
-
-    div#board{
-      position: relative;
-      width: 1024px;
-      height: 863px;
-      margin: auto;
-      background: url("board.jpg") no-repeat;
-
-    }
-    div#messageArea{
-      position: absolute;
-      top:0px;
-      left: 0px;
-      color:rgb(83, 175, 19);
-    }
-    table{
-      position: absolute;
-      left:173px;
-      top :98px;
-      border-spacing: 0px;
-    }
-    td{
-      width:94px;
-      height: 94px;
-    }
-    form{
-      position: absolute;
-      bottom: 0px;
-      right: 0px;
-      padding: 15px;
-      background-color:rgb(83, 175, 19);
-    }
-    form input{
-      background-color: rgb(152, 207, 113);
-      border-color: rgb(83,175,19);
-      font-size: lem;
-    }
-  </style>
 </head>
 <body>
   <div id="board">
@@ -55,7 +16,7 @@
       <td id="04"></td><td id="05"></td><td id="06"></td>
   </tr>
   <tr>
-      <td id="10"></td><td id="11"></td><td id="12"></td><td id="13"></td>
+      <td id="10"></td><td class="hit" id="11"></td><td id="12"></td><td id="13"></td>
       <td id="14"></td><td id="15"></td><td id="16"></td>
   </tr>
   <tr>
