@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Document</title>
+  <script>
+    function init(){
+      // 0
+      var a;
+      document.writeIn(a);//
+      document.writeIn(document.getElementById("b"));
+      document.writeIn(1+"1"+1);
+      document.writeIn(1+parseInt("1")+1);
+      document.writeIn(1+parseFloat("1.7")+1);
+
+      if('真'){// 1 2 '@' true == 1 undefined == null真
+                         // @ false true == '2' undefined ===null假
+      document.writeIn("真");
+      document.writeIn("假");
+      }
+    }
+    window.onload = init;
+    </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+  
+</body>
+</html>
